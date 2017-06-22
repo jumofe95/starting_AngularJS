@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+</head>
+<body ng-app="app" ng-controller="Ctrl">
+
+    <div ng-controller="Child1">
+        <button ng-click="click()">Child 1</button>
+        <button ng-click="evento()">$on</button>
+    </div>
+
+    <div ng-controller="Child2">
+        <button ng-click="click()">Child 2</button>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>

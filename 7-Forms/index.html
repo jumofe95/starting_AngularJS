@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+</head>
+<body ng-app="app" ng-controller="Ctrl">
+
+    <form name="myForm" ng-submit="send()">
+            <input type="text"
+                   placeholder="Nombre"
+                   name="myName"
+                   ng-model="data.name"
+                   ng-minlength="5"
+                   ng-maxlength="10"
+                   required/>
+
+        <div ng-messages="myForm.myName.$error">
+            <div ng-message="required">Campo obligatorio</div>
+            <div ng-message="minlength">Minimo 5</div>
+            <div ng-message="maxlength">Maximo 10</div>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-messages/1.6.4/angular-messages.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>

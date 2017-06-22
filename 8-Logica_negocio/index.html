@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+</head>
+<body ng-app="app" ng-controller="Ctrl">
+
+    <ul>
+        <li ng-repeat="item in names">{{item.id}} - {{item.name}}</li>
+    </ul>
+
+    <select ng-model="model.id" ng-options="item.id as item.name for item in names"></select>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+    <script src="factories.js"></script>
+    <script src="services.js"></script>
+    <script src="providers.js"></script>
+    <script src="culture.js"></script>
+    <script src="config.js"></script>
+</body>
+</html>

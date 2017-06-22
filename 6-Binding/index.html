@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+</head>
+<body ng-app="app" ng-controller="Ctrl">
+
+    <input type="text" placeholder="Name" ng-model="name">
+    <input type="text" placeholder="Surname" ng-model="surname">
+
+    <div ng-cloack>
+        En HTML: <br>
+        {{name+" "+surname}}
+    </div>
+
+    <div ng-cloack>
+        En controlador: <br>
+        {{fullname()}}
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>
